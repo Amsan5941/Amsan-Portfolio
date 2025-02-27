@@ -1,0 +1,224 @@
+/* General Hero Section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    padding: 80px 10%;
+    color: white;
+}
+
+/* Profile Image */
+.hero-image {
+    margin-top: 50px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Main Heading */
+.hero h1 {
+    width: 100%;
+    font-size: 70px;  
+    font-weight: 800;
+    line-height: 1.3;
+    margin: 0;
+    text-align: center;
+}
+
+/* Yellow Highlighted Name */
+.hero h1 span:first-child {
+    color: white;
+    background-color: #ffcc00;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Typing Effect */
+.typing-text {
+    color: white;
+    font-weight: 800;
+}
+
+/* Blinking Cursor */
+.cursor {
+    display: inline-block;
+    margin-left: 5px;
+    color: #ffcc00;
+    font-size: 70px;
+    font-weight: bold;
+    animation: blink 1s infinite;
+}
+
+/* Cursor Blink Animation */
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+/* Hero Paragraph */
+.hero p {
+    width: 70%;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.8;
+    margin: 0 auto;
+    color: #ddd;
+}
+
+/* Action Buttons */
+.hero-action {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 40px 0;
+    flex-wrap: wrap;
+}
+
+/* Button Styles */
+.hero-button {
+    padding: 18px 40px;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+/* GitHub Button */
+.github-btn {
+    background-color: #333;
+    color: white;
+    text-transform: uppercase;
+}
+
+/* LinkedIn Button */
+.linkedin-btn {
+    background-color: #0077b5;
+    color: white;
+    text-transform: uppercase;
+}
+
+/* Resume Button (Styled Like Connect With Me) */
+.resume-btn {
+    padding: 18px 40px;
+    border-radius: 50px;
+    background: black;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s ease;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+    animation: glow 1.5s infinite alternate;
+    border: 2px solid white;
+    text-transform: uppercase;
+}
+
+/* Hover Effects */
+.hero-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+}
+
+/* Glowing Effect */
+@keyframes glow {
+    from {
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+    to {
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    }
+}
+
+/* Responsive Design */
+
+/* Tablet View */
+@media (max-width: 1024px) {
+    .hero h1 {
+        font-size: 50px;
+    }
+
+    .hero p {
+        font-size: 20px;
+        width: 85%;
+    }
+
+    .hero-image {
+        width: 250px;
+        height: 250px;
+    }
+
+    .hero-button {
+        padding: 16px 35px;
+        font-size: 18px;
+    }
+
+    .cursor {
+        font-size: 50px;
+    }
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero p {
+        font-size: 18px;
+        width: 90%;
+    }
+
+    .hero-action {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hero-image {
+        width: 200px;
+        height: 200px;
+    }
+
+    .cursor {
+        font-size: 42px;
+    }
+}
+
+/* Small Mobile View */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .hero-image {
+        width: 180px;
+        height: 180px;
+    }
+
+    .hero-button {
+        padding: 12px 28px;
+        font-size: 16px;
+    }
+
+    .cursor {
+        font-size: 32px;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
+}

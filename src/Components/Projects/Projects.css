@@ -1,0 +1,195 @@
+/* General Project Section */
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    margin: 60px 5%;
+    text-align: center;
+    color: white;
+}
+
+/* Project Title */
+.project-title {
+    position: relative;
+}
+
+/* Project Title */
+.project-title h1 {
+    font-size: 70px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: white; /* Changed from gradient to solid white */
+    background: none; /* Removed gradient background */
+    -webkit-background-clip: unset;
+    -webkit-text-fill-color: unset;
+}
+
+.project-title h1::after {
+    content: "";
+    position: absolute;
+    left: 0; /* Aligned underline with text */
+    bottom: -5px;
+    width: 100%;
+    height: 4px;
+    background: #ffcc00;
+    box-shadow: 0px 0px 8px #ffcc00;
+}
+
+/* Project Container (2 x 5 Layout) */
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    width: 100%;
+    padding: 0 20px;
+    margin-bottom: 60px;
+}
+
+/* Project Card Format */
+.project-format {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+    border-radius: 16px;
+    border: none;
+    background: linear-gradient(135deg, #1a1a1a, #292929);
+    transition: all 0.4s ease;
+    cursor: pointer;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    position: relative;
+}
+
+.project-format h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #ffcc00;
+}
+
+.project-format h2 {
+    font-size: 34px;
+    font-weight: 800;
+    background: linear-gradient(90deg, #ffcc00, #ff6600);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.project-format p {
+    color: #d4d4d4;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+/* Visit Project Button */
+.projects-visit {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #ffcc00;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.projects-visit p {
+    margin: 0;
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effect */
+.project-format:hover {
+    transform: translateY(-10px);
+    background: linear-gradient(135deg, #3f0028, #582300);
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.8);
+}
+
+.project-format:hover .projects-visit p {
+    transform: translateX(10px);
+    color: #ffffff;
+}
+
+/* Project Link */
+.project-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Responsive Design */
+
+/* Tablet View */
+@media (max-width: 1024px) {
+    .project-title h1 {
+        font-size: 50px;
+    }
+
+    .project-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .project-format {
+        padding: 30px;
+    }
+
+    .project-format h2 {
+        font-size: 30px;
+    }
+
+    .project-format p {
+        font-size: 18px;
+    }
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .project-title h1 {
+        font-size: 40px;
+    }
+
+    .project-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .project-format {
+        padding: 25px;
+    }
+
+    .project-format h2 {
+        font-size: 28px;
+    }
+
+    .project-format p {
+        font-size: 16px;
+    }
+}
+
+/* Small Mobile View */
+@media (max-width: 480px) {
+    .project-title h1 {
+        font-size: 32px;
+    }
+
+    .project-format {
+        padding: 20px;
+        border-radius: 12px;
+    }
+
+    .project-format h2 {
+        font-size: 24px;
+    }
+
+    .project-format p {
+        font-size: 14px;
+    }
+
+    .projects-visit {
+        font-size: 16px;
+    }
+}
