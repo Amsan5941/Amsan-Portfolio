@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Hero.css";
-import profile_img from "../../assets/amsan-picture.JPG";
+import profile_img from "../../assets/amsan-picture.jpg";
 
 const typingTexts = [
   "a programmer.",
