@@ -77,7 +77,7 @@ const Hero = () => {
 
       <div className="hero-action">
         <a href="https://github.com/Amsan5941" target="_blank" rel="noopener noreferrer" className="hero-button github-btn">GitHub</a>
-        <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="hero-button resume-btn">My Resume</a>
+        <a href="https://drive.google.com/file/d/1GMBjvY3oBM4CQ1okIoMUh4nWvvMmjKzR/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="hero-button resume-btn">My Resume</a>
         <a href="https://www.linkedin.com/in/amsan-naheswaran-243407231/" target="_blank" rel="noopener noreferrer" className="hero-button linkedin-btn">LinkedIn</a>
       </div>
     </div>
