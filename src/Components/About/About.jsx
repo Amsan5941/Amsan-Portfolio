@@ -1,6 +1,6 @@
 import React from 'react'
 import './About.css'
-import profile_img from '../../assets/VIX_8328.JPG'
+import profile_img from '../../assets/VIX_8328.jpg'
 
 const About = () => {
   const skills = [
